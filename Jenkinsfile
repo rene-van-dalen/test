@@ -1,14 +1,15 @@
 pipeline {
   agent {
-    dockerfile {
-      filename 'Dockerfile'
+    docker {
+      image 'dockerfile/rethinkdb'
+      args '-p 8080:8080 -p 28015:28015 -p 29015:29015'
     }
 
   }
   stages {
-    stage('') {
+    stage('Build') {
       steps {
-        git 'https://github.com/dockerfile/rethinkdb'
+        sh 'apt-get update'
       }
     }
 
