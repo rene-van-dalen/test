@@ -1,15 +1,15 @@
 pipeline {
-  agent {
-    docker {
-      image 'rethinkdb'
-      args '-p 8081:8080 -p 28015:28015 -p 29015:29015'
-    }
-
-  }
+  agent none
   stages {
     stage('Build') {
       steps {
-        sh 'echo hello'
+        git(url: 'https://github.com/rethinkdb/rethinkdb-dockerfiles', branch: 'jessie/2.3.6')
+      }
+    }
+
+    stage('') {
+      steps {
+        echo 'test'
       }
     }
 
