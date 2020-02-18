@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         git 'https://github.com/rethinkdb/rethinkdb-dockerfiles'
-        sh 'docker compose .'
+        sh 'docker build jessie/2.3.6 '
       }
     }
 
