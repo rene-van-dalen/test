@@ -1,5 +1,10 @@
 pipeline {
-  agent none
+  agent {
+    dockerfile {
+      filename 'Dockerfile'
+    }
+
+  }
   stages {
     stage('Build') {
       steps {
@@ -7,7 +12,7 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('error') {
       steps {
         echo 'test'
       }
