@@ -27,4 +27,7 @@ source <(curl -sSL "https://raw.githubusercontent.com/open-toolchain/commons/mas
     }
 
   }
+  environment {
+    REGISTRY_URL = 'de.icr.io'
+  }
 }
