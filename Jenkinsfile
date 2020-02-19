@@ -41,6 +41,12 @@ source <(curl -sSL "https://raw.githubusercontent.com/open-toolchain/commons/mas
       }
     }
 
+    stage('Check vulscan') {
+      steps {
+        echo 'test'
+      }
+    }
+
   }
   environment {
     REGISTRY_URL = 'de.icr.io'
