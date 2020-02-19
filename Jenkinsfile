@@ -29,5 +29,6 @@ source <(curl -sSL "https://raw.githubusercontent.com/open-toolchain/commons/mas
   }
   environment {
     REGISTRY_URL = 'de.icr.io'
+    IMAGE_NAME = 'r2r-platform/rethink-rvd-tst4'
   }
 }
