@@ -42,7 +42,7 @@ source <(curl -sSL "https://raw.githubusercontent.com/open-toolchain/commons/mas
 # ------------------
 # source: https://raw.githubusercontent.com/open-toolchain/commons/master/scripts/check_vulnerabilities.sh
 # Check for vulnerabilities of built image using Vulnerability Advisor
-source ~/check_vulnerabilities.sh)
+source ~/check_vulnerabilities.sh
 '''
       }
     }
