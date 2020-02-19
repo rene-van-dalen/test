@@ -26,6 +26,7 @@ pipeline {
 # Also copies information into a build.properties file, so they can be reused later on by other scripts (e.g. image url, chart name, ...)
 source <(curl -sSL "https://raw.githubusercontent.com/open-toolchain/commons/master/scripts/build_image.sh")
 '''
+        input(message: 'Test', id: 'Test', ok: 'ok')
       }
     }
 
