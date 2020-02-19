@@ -33,6 +33,7 @@ source <(curl -sSL "https://raw.githubusercontent.com/open-toolchain/commons/mas
     stage('Vulnerability Check') {
       steps {
         sh '''#!/bin/bash
+
 # uncomment to debug the script
 
  set -x
@@ -40,7 +41,7 @@ source <(curl -sSL "https://raw.githubusercontent.com/open-toolchain/commons/mas
 #    source ./scripts/check_vulnerabilities.sh
 # alternatively, you can source it from online script:
 #    source <(curl -sSL "https://raw.githubusercontent.com/open-toolchain/commons/master/scripts/check_vulnerabilities.sh")
-# ------------------
+# export $(grep -v \'^#\' build.properties | xargs)
 # source: https://raw.githubusercontent.com/open-toolchain/commons/master/scripts/check_vulnerabilities.sh
 # Check for vulnerabilities of built image using Vulnerability Advisor
 source ~/check_vulnerabilities.sh
