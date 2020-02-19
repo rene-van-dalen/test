@@ -31,5 +31,6 @@ source <(curl -sSL "https://raw.githubusercontent.com/open-toolchain/commons/mas
     IMAGE_NAME = 'rethink-rvd-tst4'
     REGISTRY_NAMESPACE = 'r2r-platform'
     DOCKER_ROOT = 'buster/2.4.0'
+    ARCHIVE_DIR = '.'
   }
 }
