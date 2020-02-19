@@ -31,7 +31,6 @@ source ~/build_image.sh
 
     stage('Check vulscan') {
       steps {
-        load 'build.properties'
         sh '''#!/bin/bash
 # uncomment to debug the script
 # set -x
@@ -54,6 +53,5 @@ source <(curl -sSL "https://raw.githubusercontent.com/open-toolchain/commons/mas
     REGISTRY_NAMESPACE = 'r2r-platform'
     DOCKER_ROOT = 'buster/2.4.0'
     ARCHIVE_DIR = '.'
-    IMAGE_TAG = 'latest'
   }
 }
