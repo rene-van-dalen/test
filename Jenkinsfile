@@ -44,11 +44,7 @@ source <(curl -sSL "https://raw.githubusercontent.com/open-toolchain/commons/mas
     stage('Check vulscan') {
       steps {
         echo 'test'
-        def props = readProperties  file:'build.properties'
-         def IMAGE_TAG= props['IMAGE_TAG']
-
-         echo "IMAGE_TAG=${IMAGE_TAG}"
-
+        
       }
     }
 
