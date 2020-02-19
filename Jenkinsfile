@@ -29,6 +29,7 @@ source <(curl -sSL "https://raw.githubusercontent.com/open-toolchain/commons/mas
   }
   environment {
     REGISTRY_URL = 'de.icr.io'
-    IMAGE_NAME = 'r2r-platform/rethink-rvd-tst4'
+    IMAGE_NAME = 'rethink-rvd-tst4'
+    REGISTRY_NAMESPACE = 'r2r-platform'
   }
 }
